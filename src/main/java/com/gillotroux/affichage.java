@@ -1,7 +1,10 @@
 package com.gillotroux;
 
-public abstract class affichage implements Affiche{
-	public void affiche(String texte) {
+public class affichage implements Affiche{
+	protected String texte;
+	public affichage(){}
+	
+	public void affiche() {
 		System.out.println(texte);
 	}
 }
