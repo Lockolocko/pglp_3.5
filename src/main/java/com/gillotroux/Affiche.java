@@ -1,5 +1,16 @@
+/**
+ * Package de Gillot-Roux.
+ */
 package com.gillotroux;
 
+/**
+ * Interface affiche.
+ * @author Lockolocko
+ *
+ */
 public interface Affiche {
-	public void affiche();
+    /**
+     * Methode d'affiche.
+     */
+    void affiche();
 }

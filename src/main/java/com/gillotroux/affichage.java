@@ -1,10 +1,37 @@
+/**
+ * Package de Gillot-Roux.
+ */
 package com.gillotroux;
 
-public class affichage implements Affiche{
-	protected String texte;
-	public affichage(){}
-	
-	public void affiche() {
-		System.out.println(texte);
-	}
+/**
+ * Affichage.
+ * @author Lockolocko
+ *
+ */
+public class Affichage implements Affiche {
+    /**
+     * Texte à afficher.
+     */
+    private String texte;
+
+    /**
+     * Constructeur.
+     */
+    public Affichage() {
+    }
+
+    /**
+     * Set text.
+     * @param text
+     */
+    public void setTexte(final String text) {
+        this.texte = text;
+    }
+
+    /**
+     * Affiche.
+     */
+    public void affiche() {
+        System.out.println(texte);
+    }
 }

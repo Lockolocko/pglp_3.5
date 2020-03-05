@@ -1,18 +1,31 @@
+/**
+ * Package de Gillot-Roux.
+ */
 package com.gillotroux;
 
 import java.time.LocalDateTime;
 
-public class UneClasseMetier extends affichage{
-	public UneClasseMetier() {
-		super();
-	}
-	
-	public void UneMethodeMetier() {
-		this.texte=LocalDateTime.now()+"";
-		affiche();		
-		this.texte=LocalDateTime.now()+"";
-		affiche();
-		
-		
-	}
+/**
+ * Classe de metier.
+ * @author Lockolocko
+ *
+ */
+public class UneClasseMetier extends Affichage {
+    /**
+     * Constructeur.
+     */
+    public UneClasseMetier() {
+        super();
+    }
+
+    /**
+     * Affiche deux temps.
+     */
+    public void uneMethodeMetier() {
+        super.setTexte(LocalDateTime.now() + "");
+        affiche();
+        super.setTexte(LocalDateTime.now() + "");
+        affiche();
+
+    }
 }
